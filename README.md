@@ -9,7 +9,7 @@ The object of this hands-on session is to conduct GWAS with some published softw
 
 To get ready for the tutorials, please download the following softwares/R packages to your local machine
 
-1. adfasdfkahsldkj
-2. df;askdfjasl
-3. dfias;dffalsdf;
-4. kdfjs;akdjfa;sd
+1. [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/)
+2. If you are uisng a Window machine and want to try the command line part of the tutoral (using TASSEL to conduct GWAS with MLM), please download [PuTTY] (https://www.putty.org/)
+3. [TASSEL Version 5.0 Standalone](https://tassel.bitbucket.io/)
+4. R packages: [tidyverse](https://www.tidyverse.org/packages/), [GAPIT](https://zzlab.net/GAPIT/), [FarmCPUpp](https://github.com/amkusmec/FarmCPUpp), [qqman](https://cran.r-project.org/web/packages/qqman/index.html)
