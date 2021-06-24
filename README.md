@@ -2,7 +2,10 @@
 
 ## Hands-on session of the AG2PI online workshop series: ["A practical guide to Genome-wide association studies (GWAS)"](https://www.ag2pi.org/workshops-and-activities/workshop-2021-06/) put together by Zihao Zheng
 
-The object of this hands-on session is to go through .....
+The object of this hands-on session is to conduct GWAS with some published softwares, using maize as examples. The choice of GWAS models here are the gold standard mixed linear model (MLM) covered in the presentation, and fixed and random model circulating probability unification (FarmCPU).
+
+
+ 
 
 To get ready for the tutorials, please download the following softwares/R packages to your local machine
 
