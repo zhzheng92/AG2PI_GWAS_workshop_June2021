@@ -2,7 +2,7 @@ setwd("~/AG2PI_GWAS_workshop/data/")
 library("qqman","tidyverse")
 
 # load GWAS output from TASSEL
-GWAS_output <- read_delim("mlm_output_tutorial4.txt",delim = "\t")
+GWAS_output <- read_delim("mlm_output_tutorial4.txt",delim = "\t") # this file is one of the output from the script "02.TASSEL_MLM.sh"
 
 # select trait "EarDia" (ear diameter) as an example for visualization
 gwasResults <- GWAS_output %>% filter(Trait == "EarDia" & Marker != "None") %>% 
