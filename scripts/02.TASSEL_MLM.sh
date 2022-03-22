@@ -3,7 +3,10 @@
 # a one-liner to condunct GWAS using mixed linear model (MLM) with TASSEL
 # to run the script, type "sh TASSEL_MLM.sh" in your terminal
 
-/path_to_TASSEL_software_and_data/run_pipeline.pl -fork1 -importGuess mdp_genotype.hmp.txt -FilterSiteBuilderPlugin -siteMinAlleleFreq 0.05 -endPlugin  -fork2 -importGuess mdp_traits.txt -fork3 -importGuess mdp_population_structure.txt -excludeLastTrait -fork4 -importGuess mdp_kinship.txt -combine5 -input1 -input2 -input3 -intersect -combine6 -input5 -input4 -mlm -mlmVarCompEst P3D -mlmCompressionLevel Optimum -export mlm_output_tutorial
+/path_to_TASSEL_software_and_data/run_pipeline.pl -fork1 -importGuess mdp_genotype.hmp.txt -FilterSiteBuilderPlugin -siteMinAlleleFreq 0.05 -endPlugin  
+-fork2 -importGuess mdp_traits.txt 
+-fork3 -importGuess mdp_population_structure.txt -excludeLastTrait 
+-fork4 -importGuess mdp_kinship.txt -combine5 -input1 -input2 -input3 -intersect -combine6 -input5 -input4 -mlm -mlmVarCompEst P3D -mlmCompressionLevel Optimum -export mlm_output_tutorial
 
 # pay attention to the space between each parameter
 # -fork1 -importGuess mdp_genotype.hmp.txt ## import the hmp format SNP markers
@@ -15,4 +18,10 @@
 # -combine6 -input5 -input4 -mlm -mlmVarCompEst P3D -mlmCompressionLevel Optimum -export mlm_output_tutorial ## specify model parameters for MLM and name the outputs
 
 
-
+# If the above command line doesn't work on your system, please try the following one (change the directories to your own setup): 
+#./run_pipeline.pl -Xmx10g -fork1 -h TASSELTutorialData/data/mdp_genotype.hmp.txt -filterAlign -filterAlignMinCount 150 -filterAlignMinFreq 0.05 
+#-fork2 -importGuess TASSELTutorialData/data/mdp_traits.txt 
+#-fork3 -importGuess TASSELTutorialData/data/mdp_population_structure.txt 
+#-combine4 -input1 -input2 -input3 -intersect 
+#-fork5 -importGuess TASSELTutorialData/data/mdp_kinship.txt 
+#-combine6 -input5 -input4 -mlm -mlmVarCompEst P3D -mlmCompressionLevel Optimum -export mlm_output_tutorial
